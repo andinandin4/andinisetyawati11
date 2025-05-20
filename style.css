@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: arial;
+    background-color: #90fdd7;
+    color: rgb(21, 89, 60);
+    margin: 0;
+}
+
+header {
+    background-color: #a9f9d1;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgb(106, 240, 182);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrep;
+    color: #000000;
+}
+
+nav .logo img {
+    height: 30px;
+    width: auto;
+}
+
+nav ul { 
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #c99fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li :hover {
+    background-color: #ffffff;
+}
+
+nav ul li .active {
+    background-color: #ceaeff;
+    color: rgb(133, 171, 219);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+
+    font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 0;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(56, 147, 106);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p{
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Hero button styling*/
+.hero-button {
+    display: inline-block;
+    padding: 12px 25px; /*Ukuran tombol */
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(29, 34, 100);
+    background-color: #5396b5; /*hijau utama*/
+    border: none;
+    border-radius: 5px; /*Sudut tombol melengkung*/
+    text-decoration: none; /*Hilangkan undeline*/
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero-button:hover {
+    background-color: #60c1c7; /*Warna hijau gelap*/
+    transform: scale(1.05);
+}
+
+/*About Section*/
+.about {
+    padding: 80px 20px;
+    padding-left: 40px;
+    padding-right : 40px
+}
+
+.about-container {
+    display: flex;
+    flex-direction:column;
+    gap: 40px;
+    margin-bottom: auto;
+    padding: 0 20px;
+}
+
+.section-title{
+    color: #0f1af3;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.section-title{
+    color: #464ef3;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.about-left, .about-right{
+    flex: 1;
+    text-align: justify;
+}
+
+.about-left h3, .about-right{
+    color: #0a4214;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.about-left p,.about-right{
+
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-left ul li span {
+    color: #3c9c57;
+    margin-right: 10px;
+    font-size: 10px;
+    
+}
+
+.logo-container {
+    display: flex;
+    background-color: white;
+    padding: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container img {
+    display: flex;
+    max-width: 250px;
+}
+.logo-client {
+    width: 150px;
+    display: flex;
+    position: relative;
+}
+
+
+.footer{
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right,#639d9d,#69c6f1);
+    padding: 100px 0 30px;
+    font-size: 2rem;
+    line-height: 20px;
+}
+
+.footer_container{
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem;
+}
+
+.footer-col{
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-col:hover{
+    color: rgb(141, 192, 226)
+    transition all 1.3s cubic-bezier(0.175s,0.885,0.32,1.275)
+}
+
+.footer p{
+    padding: 1rem;
+    color: #69c6f1;
+}
+
+.footer_container img{
+    max-width: 230px;
+    background-size: cover;
+}
+
+.logo-wid{
+    max-width: 50px;
+    filter: grayscale();
+    transition: all 0.7s;
+}
+
+.logo-wid:hover{
+    filter: none;
+    transition: all 0.7s;
+}
+
+.logo-skl:hover{
+    transform: scale(1.2s);
+    box-shadow: #218838;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Jarak antar card */
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(33.33% - 15px); /* Tiga kolom */
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.filter-btn {
+    padding: 10x 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #218838; /*warna hijau gelap */
+    color: white;
+}
+
+.filter-btn.active {
+    background-color: #28a745; /*warna hijau */
+    color: white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Maintain square aspect ratio */
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire square */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item img:hover {
+    transform: scale(1.05);
+}
+
+#secondary-nav1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.foot-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.foot-page {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: left;
+}
+
+.foot-page h3 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.foot-page ul {
+    list-style: none;
+}
+
+.foot-page ul li {
+    margin: 5px 0;
+}
+
+.foot-page ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.foot-page input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.foot-button {
+    display: block;
+    width: 100%;
+    background: #ff6600;
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.foot-button:hover {
+    background: #e65c00;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background: #e65c00;
+}
+
+.footer {
+    font-size: 14px; /* Bisa disesuaikan */
+}
+
+.footer h3 {
+    font-size: 16px; /* Ukuran judul, bisa dikurangi lagi */
+}
+
+.footer p, .footer ul li {
+    font-size: 12px; /* Ukuran teks biasa */
+}
